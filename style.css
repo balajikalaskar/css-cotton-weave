@@ -1,0 +1,221 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'NeueHaasDisplayRoman', sans-serif;
+}
+
+html, body {
+   width: 100%;
+   height: 100%;
+}
+
+#maindiv {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 50px;
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 40px;
+    padding-bottom: 0;
+}
+
+#left {
+   width: 46%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+#left h1 {
+   font-size: 7.2vw;
+   font-weight: 500;
+   line-height: 6.8vw;
+}
+
+#leftbottom {
+   width: 100%;
+   height: 40%;
+   padding-top: 27px;
+}
+
+#color {
+   width: fit-content;
+   padding: 4px 6px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50px;
+   border: 2px solid black;
+}
+
+#color1 {
+   height: 14px;
+   width: 14px;
+   background-color: burlywood;
+   border-radius: 50%;
+   margin-left: 13px;
+   margin-right: 3.5px;
+}
+
+#color2 {
+   height: 14px;
+   width: 14px;
+   background-color: brown;
+   border-radius: 50%;
+}
+
+#color h5 {
+   font-size: 0.9vw;
+}
+
+#details h3 {
+   font-size: 20px;
+   padding-top: 20px;
+   font-size: 1.35vw;
+}
+
+#details {
+   width: 60%;
+}
+
+#details p {
+   padding-top: 5px;
+   font-size: 1vw;
+   line-height: 20px;
+   font-weight: 600;
+   color: #444;
+}
+
+#right {
+   width: 30%;
+   height: calc(100% - 20px);
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+#righttop {
+   display: flex;
+   justify-content: space-between;
+   padding: 7px 23px;
+   padding-left: 6px;
+}
+#righttop h5 i {
+    color: goldenrod;
+}
+
+#img {
+   width: 100%;
+   height: 100%;
+   flex: 1;
+   overflow: hidden;
+}
+
+#img img {
+  height: 150%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block; 
+}
+
+#circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -15%; 
+    top: 27%;
+    width: 130px;
+    height: 130px;
+    background-color: rgb(3, 3, 7);
+    border-radius: 50%; 
+    font-size: 20px; 
+     color: #eee;
+    text-decoration: none;
+}
+#circle a:hover {
+    text-decoration: underline;
+}
+#circle h5 {
+    font-weight: 500;
+}
+#rotext {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 73%;
+    left: -33%;
+    font-size: 22px;
+}
+@media (max-width:600px) {
+   
+#maindiv {
+    flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+#left {
+   width: 100%;
+   height: 100%;
+}
+#left h1 {
+   padding-left: 20px;
+   font-size: 23.5vw;
+   font-weight: 500;
+   line-height: 22vw;
+   padding-right: 30px;
+}
+#color h5 {
+   font-size: 3.5vw;
+}
+#leftbottom {
+   height: 40%;
+   padding-top: 25px;
+   padding-left: 20px;
+}
+#details {
+   width: 95%;
+}
+#details p {
+   font-size: 3vw;
+   line-height: 20px;
+   font-weight: 600;
+}
+#details h3 {
+   padding-top: 18px;
+   padding-bottom: 8px;
+   font-size: 4.5vw;
+}
+#right {
+   width: 100%;
+   height: calc(100% - 20px);
+   padding-right: 10px;
+}
+
+#righttop {
+   padding: 0px 23px;
+   padding-left: 6px;
+   font-size: 3.68vw;
+}
+
+#img img {
+  padding-top: 12px;
+   height: 150%;
+  width: 95%;
+}
+#circle {
+    right: 1%; 
+    top: 15%;
+}
+#rotext {
+    display: none;
+}
+
+}
